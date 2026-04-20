@@ -17,7 +17,5 @@
     "citations",
     "ncbi",
     "literature"
-  ],
-  "skills": "./skills/",
-  "agents": "./agents/"
+  ]
 }
