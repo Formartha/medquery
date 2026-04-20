@@ -4,26 +4,30 @@ A Claude Code plugin marketplace for biomedical research. Turn authoritative med
 
 ## Install
 
+Add the marketplace, then install the source plugins you want:
+
 ```
 /plugin marketplace add Formartha/medquery
-/plugin install medquery@medquery
+/plugin install medquery-pubmed@medquery
 ```
 
 Or via the CLI:
 
 ```
 claude plugin marketplace add Formartha/medquery
-claude plugin install medquery@medquery
+claude plugin install medquery-pubmed@medquery
 ```
 
 ## Plugins
 
-| Plugin | Description | Status |
-| --- | --- | --- |
-| [`medquery`](plugins/medquery) | Search PubMed and synthesize cited answers. | ✔ available |
-| `medquery-trials` | ClinicalTrials.gov registry search. | planned |
-| `medquery-fda` | openFDA drug labels, adverse events, recalls. | planned |
-| `medquery-europepmc` | Europe PMC (includes preprints + full text). | planned |
+Each plugin wraps one biomedical source and exposes a single-word slash command, so you can install only what you need.
+
+| Plugin | Slash command | Description | Status |
+| --- | --- | --- | --- |
+| [`medquery-pubmed`](plugins/medquery-pubmed) | `/pubmed` | Peer-reviewed literature via NCBI E-utilities. | ✔ available |
+| `medquery-trials` | `/trials` | ClinicalTrials.gov registry search. | planned |
+| `medquery-fda` | `/fda` | openFDA drug labels, adverse events, recalls. | planned |
+| `medquery-europepmc` | `/europepmc` | Europe PMC (includes preprints + full text). | planned |
 
 ## Disclaimer
 

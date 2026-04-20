@@ -9,9 +9,9 @@
   },
   "plugins": [
     {
-      "name": "medquery",
-      "source": "./plugins/medquery",
-      "description": "Search PubMed and synthesize cited answers to clinical/scientific questions.",
+      "name": "medquery-pubmed",
+      "source": "./plugins/medquery-pubmed",
+      "description": "PubMed source for the medquery marketplace. Exposes /pubmed to search PubMed and synthesize cited answers.",
       "version": "0.1.0",
       "keywords": [
         "pubmed",
