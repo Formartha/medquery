@@ -4,30 +4,28 @@ A Claude Code plugin marketplace for biomedical research. Turn authoritative med
 
 ## Install
 
-Add the marketplace, then install the source plugins you want:
-
 ```
 /plugin marketplace add Formartha/medquery
-/plugin install medquery-pubmed@medquery
+/plugin install medquery@medquery
 ```
 
 Or via the CLI:
 
 ```
 claude plugin marketplace add Formartha/medquery
-claude plugin install medquery-pubmed@medquery
+claude plugin install medquery@medquery
 ```
 
-## Plugins
+## Commands
 
-Each plugin wraps one biomedical source and exposes a single-word slash command, so you can install only what you need.
+One plugin, one slash namespace. Each biomedical source gets its own command under `/medquery:*`.
 
-| Plugin | Slash command | Description | Status |
-| --- | --- | --- | --- |
-| [`medquery-pubmed`](plugins/medquery-pubmed) | `/pubmed` | Peer-reviewed literature via NCBI E-utilities. | ✔ available |
-| `medquery-trials` | `/trials` | ClinicalTrials.gov registry search. | planned |
-| `medquery-fda` | `/fda` | openFDA drug labels, adverse events, recalls. | planned |
-| `medquery-europepmc` | `/europepmc` | Europe PMC (includes preprints + full text). | planned |
+| Command | Source | Status |
+| --- | --- | --- |
+| `/medquery:pubmed <question>` | PubMed (NCBI E-utilities) | ✔ available |
+| `/medquery:trials <question>` | ClinicalTrials.gov | planned |
+| `/medquery:fda <question>` | openFDA drug labels, adverse events, recalls | planned |
+| `/medquery:europepmc <question>` | Europe PMC (preprints + full text) | planned |
 
 ## Disclaimer
 
