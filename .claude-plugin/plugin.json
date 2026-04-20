@@ -1,0 +1,23 @@
+{
+  "name": "medquery",
+  "version": "0.1.0",
+  "description": "PubMed research for Claude Code. Answers clinical/scientific questions with real citations from biomedical literature.",
+  "author": {
+    "name": "Formartha"
+  },
+  "homepage": "https://github.com/Formartha/medquery",
+  "repository": "https://github.com/Formartha/medquery",
+  "license": "MIT",
+  "keywords": [
+    "pubmed",
+    "biomedical",
+    "research",
+    "medical",
+    "clinical",
+    "citations",
+    "ncbi",
+    "literature"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/"
+}

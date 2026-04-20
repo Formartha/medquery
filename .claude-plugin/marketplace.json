@@ -1,0 +1,25 @@
+{
+  "name": "medquery",
+  "owner": {
+    "name": "Formartha",
+    "url": "https://github.com/Formartha"
+  },
+  "description": "PubMed research plugin for Claude Code.",
+  "plugins": [
+    {
+      "name": "medquery",
+      "source": ".",
+      "description": "Search PubMed and synthesize cited answers to clinical/scientific questions.",
+      "version": "0.1.0",
+      "keywords": [
+        "pubmed",
+        "biomedical",
+        "research",
+        "medical",
+        "clinical"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/Formartha/medquery"
+    }
+  ]
+}
