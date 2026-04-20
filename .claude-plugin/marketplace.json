@@ -4,11 +4,13 @@
     "name": "Formartha",
     "url": "https://github.com/Formartha"
   },
-  "description": "PubMed research plugin for Claude Code.",
+  "metadata": {
+    "description": "Biomedical research plugins for Claude Code — search authoritative medical sources and get cited answers."
+  },
   "plugins": [
     {
       "name": "medquery",
-      "source": ".",
+      "source": "./",
       "description": "Search PubMed and synthesize cited answers to clinical/scientific questions.",
       "version": "0.1.0",
       "keywords": [
