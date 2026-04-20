@@ -34,6 +34,7 @@ Produce a final answer with:
 2. **Key findings** — bullet points with inline citations `[PMID:12345678]`. Include study type (RCT, systematic review, cohort, etc.), sample size, and effect size/direction when reported.
 3. **Limitations / conflicting evidence** — if studies disagree, say so.
 4. **References** — numbered list at the end with PMID, title, journal, year, URL.
+5. **Disclaimer** — always end with a short disclaimer reminding the user that AI tools can make mistakes, this is not medical advice, and they should verify the cited PMIDs and consult a licensed clinician before acting on anything. Phrase it naturally, not as boilerplate — something like: "⚠️ I'm an AI tool and can misread or miss studies. This isn't medical advice — verify the citations above and talk to a qualified clinician before acting on any of this."
 
 ## Rules
 

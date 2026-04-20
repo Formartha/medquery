@@ -25,22 +25,15 @@ claude plugin install medquery@medquery
 | `medquery-fda` | openFDA drug labels, adverse events, recalls. | planned |
 | `medquery-europepmc` | Europe PMC (includes preprints + full text). | planned |
 
-## Repository layout
+## Disclaimer
 
-```
-.
-├── .claude-plugin/
-│   └── marketplace.json      ← marketplace manifest (lists all plugins)
-├── plugins/
-│   └── medquery/             ← individual plugin
-│       ├── .claude-plugin/plugin.json
-│       ├── agents/
-│       ├── skills/
-│       ├── scripts/
-│       └── requirements.txt
-├── README.md
-└── LICENSE
-```
+medquery is an AI-assisted research tool. **Every AI tool — including this one — can make mistakes.** Answers can misread abstracts, miss important studies, misstate effect sizes, or cite studies out of context. Treat every response as a starting point, not a conclusion:
+
+- **Not medical advice.** Nothing produced by this plugin is a substitute for professional clinical judgment. Consult a licensed healthcare provider for anything affecting real patients.
+- **Verify the citations.** Open the PMIDs the plugin returns and read the actual abstracts / full text before acting on any claim.
+- **Evidence evolves.** PubMed indexing lags; preprints and ongoing trials may change the picture.
+
+Take everything with a grain of salt.
 
 ## License
 

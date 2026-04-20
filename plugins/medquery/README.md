@@ -35,3 +35,13 @@ plugins/medquery/
 
 - `python3` on PATH. Only stdlib is used; `certifi` is optional (recommended on macOS).
 - Optional env vars for higher NCBI rate limits: `NCBI_API_KEY`, `NCBI_EMAIL`.
+
+## Disclaimer
+
+medquery is an AI-assisted research tool. **Every AI tool — including this one — can make mistakes.** Answers can misread abstracts, miss important studies, misstate effect sizes, or cite studies out of context. Treat every response as a starting point, not a conclusion.
+
+- **Not medical advice.** Nothing produced by this plugin is a substitute for professional clinical judgment. Consult a licensed healthcare provider for anything affecting real patients.
+- **Verify the citations.** Open the PMIDs the plugin returns and read the actual abstracts / full text before acting on any claim.
+- **Evidence evolves.** PubMed indexing lags; preprints and ongoing trials may change the picture.
+
+Take every answer with a grain of salt.
