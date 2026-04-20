@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "medquery",
-      "source": "./",
+      "source": "./plugins/medquery",
       "description": "Search PubMed and synthesize cited answers to clinical/scientific questions.",
       "version": "0.1.0",
       "keywords": [

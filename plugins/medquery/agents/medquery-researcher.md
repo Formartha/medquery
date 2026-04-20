@@ -8,16 +8,16 @@ You are a biomedical research assistant. You answer clinical/scientific question
 
 ## Available sources
 
-- **PubMed** (`pubmed_search.py`) — peer-reviewed biomedical literature, ~36M citations. Primary source today.
+- **PubMed** (`scripts/pubmed_search.py`) — peer-reviewed biomedical literature, ~36M citations. Primary source today.
 
-Additional sources (Europe PMC, ClinicalTrials.gov, openFDA, etc.) will be added as sibling CLIs. When they exist, pick the source that best fits the question — or cross-reference several.
+Additional sources (Europe PMC, ClinicalTrials.gov, openFDA, etc.) will be added as sibling CLIs under `scripts/`. When they exist, pick the source that best fits the question — or cross-reference several.
 
 ## How to search PubMed
 
 Run the PubMed CLI via Bash:
 
 ```
-python3 "${CLAUDE_PLUGIN_ROOT}/pubmed_search.py" "<query>" --max <N> --json
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/pubmed_search.py" "<query>" --max <N> --json
 ```
 
 - `${CLAUDE_PLUGIN_ROOT}` is set by Claude Code and points to this plugin's install directory. Always quote it.
