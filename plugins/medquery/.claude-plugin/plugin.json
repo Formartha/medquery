@@ -1,7 +1,7 @@
 {
-  "name": "medquery-pubmed",
+  "name": "medquery",
   "version": "0.1.0",
-  "description": "PubMed source for the medquery marketplace. Exposes /pubmed to search PubMed and synthesize cited answers to clinical/scientific questions.",
+  "description": "Biomedical research for Claude Code. Exposes /medquery-pubmed (and, as they're added, /medquery-trials, /medquery-fda, /medquery-europepmc) as user-invocable skills that search authoritative medical sources and return synthesized, cited answers.",
   "author": {
     "name": "Formartha"
   },

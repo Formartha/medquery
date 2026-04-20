@@ -16,16 +16,16 @@ claude plugin marketplace add Formartha/medquery
 claude plugin install medquery@medquery
 ```
 
-## Commands
+## Skills
 
-One plugin, one slash namespace. Each biomedical source gets its own command under `/medquery:*`.
+One plugin, one skill per biomedical source. Each skill is user-invocable (type `/medquery-<source>`) and also auto-invokes on natural-language questions.
 
-| Command | Source | Status |
+| User invocation | Source | Status |
 | --- | --- | --- |
-| `/medquery:pubmed <question>` | PubMed (NCBI E-utilities) | ✔ available |
-| `/medquery:trials <question>` | ClinicalTrials.gov | planned |
-| `/medquery:fda <question>` | openFDA drug labels, adverse events, recalls | planned |
-| `/medquery:europepmc <question>` | Europe PMC (preprints + full text) | planned |
+| `/medquery-pubmed <question>` | PubMed (NCBI E-utilities) | ✔ available |
+| `/medquery-trials <question>` | ClinicalTrials.gov | planned |
+| `/medquery-fda <question>` | openFDA drug labels, adverse events, recalls | planned |
+| `/medquery-europepmc <question>` | Europe PMC (preprints + full text) | planned |
 
 ## Disclaimer
 

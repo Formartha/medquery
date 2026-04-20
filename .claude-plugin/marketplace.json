@@ -11,7 +11,7 @@
     {
       "name": "medquery",
       "source": "./plugins/medquery",
-      "description": "Biomedical research plugin. Exposes /medquery:pubmed (and more sources as they're added) to search authoritative medical sources and return synthesized, cited answers.",
+      "description": "Biomedical research plugin. Exposes /medquery-pubmed (and more sources as they're added) to search authoritative medical sources and return synthesized, cited answers.",
       "version": "0.1.0",
       "keywords": [
         "pubmed",

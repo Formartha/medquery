@@ -2,7 +2,7 @@
 
 Biomedical research plugin for Claude Code. Ask a clinical or scientific question and get a synthesized answer with real citations from authoritative medical sources — never fabricated.
 
-One plugin, one slash namespace (`/medquery:*`), one command per source. Install once, get `/medquery:pubmed` today; more sources follow as new sibling commands.
+One plugin, one skill per source. Install once, get `/medquery-pubmed` today; more sources drop in as new sibling skills.
 
 ## Install
 
@@ -11,31 +11,32 @@ One plugin, one slash namespace (`/medquery:*`), one command per source. Install
 /plugin install medquery@medquery
 ```
 
-## Commands
+## Skills
 
-| Command | Source | Status |
+| User invocation | Source | Status |
 | --- | --- | --- |
-| `/medquery:pubmed <question>` | PubMed (NCBI E-utilities) | ✔ available |
-| `/medquery:trials <question>` | ClinicalTrials.gov | planned |
-| `/medquery:fda <question>` | openFDA | planned |
-| `/medquery:europepmc <question>` | Europe PMC | planned |
+| `/medquery-pubmed <question>` | PubMed (NCBI E-utilities) | ✔ available |
+| `/medquery-trials <question>` | ClinicalTrials.gov | planned |
+| `/medquery-fda <question>` | openFDA drug labels, adverse events, recalls | planned |
+| `/medquery-europepmc <question>` | Europe PMC (preprints + full text) | planned |
 
-All commands also auto-invoke via natural language (e.g. *"what does the evidence say about clear aligners vs fixed braces for root resorption?"* routes to `/medquery:pubmed`).
+Each skill also auto-invokes on natural-language biomedical questions — e.g. *"what does the evidence say about clear aligners vs fixed braces for root resorption?"* routes to `medquery-pubmed` automatically.
 
 ## Layout
 
 ```
 plugins/medquery/
 ├── .claude-plugin/plugin.json
-├── commands/pubmed.md              ← /medquery:pubmed entry point
-├── skills/pubmed/SKILL.md          ← auto-invocation for biomedical Qs
-├── agents/pubmed-researcher.md     ← subagent that runs the searches
+├── skills/
+│   └── medquery-pubmed/SKILL.md    ← /medquery-pubmed (user + auto)
+├── agents/
+│   └── pubmed-researcher.md        ← subagent that runs the searches
 ├── scripts/
 │   └── pubmed_search.py            ← NCBI E-utilities wrapper
 └── requirements.txt
 ```
 
-As new sources are added, each one drops in as a sibling set: `commands/trials.md`, `skills/trials/SKILL.md`, `agents/trials-researcher.md`, `scripts/trials_search.py` — no restructure.
+As new sources are added, each drops in as a sibling set: `skills/medquery-trials/SKILL.md`, `agents/trials-researcher.md`, `scripts/trials_search.py` — no restructure.
 
 ## Requirements
 
