@@ -21,4 +21,4 @@ If the user invoked `/medquery` with no question, ask them what they want resear
 
 ## What to return
 
-Relay the subagent's answer to the user as-is. Do not strip citations, references, or caveats — the citations are the point.
+Relay the subagent's answer to the user as-is. Do not strip citations, references, or the closing disclaimer — they are all part of the answer. The disclaimer (AI tools can make mistakes; not medical advice; verify PMIDs and consult a clinician) MUST appear in every response.
